@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MoviePassion — Filmy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <div class="logo">MoviePassion</div>
+    <nav class="menu">
+      <a href="index.html">Domů</a>
+      <a href="movies.html" class="active">Filmy</a>
+      <a href="profile.html">Profil</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="breadcrumbs">Domů / Filmy</div>
+
+  <section class="catalog-grid">
+    <!-- levý sloupec: filtr (statický) -->
+    <aside class="sidebar">
+      <div class="panel">
+        <h3>Filtrování</h3>
+        <label class="control">
+          Hledat (neaktivní)
+          <input type="text" placeholder="Název filmu..." readonly>
+        </label>
+
+        <h4>Žánr</h4>
+        <ul class="filters">
+          <li>Vše</li>
+          <li>Drama</li>
+          <li>Akční</li>
+          <li>Sci-fi</li>
+          <li>Komedie</li>
+          <li>Thriller</li>
+        </ul>
+
+        <h4>Rok</h4>
+        <select disabled>
+          <option>Všechny roky</option>
+          <option>2025</option>
+          <option>2024</option>
+          <option>2020–2023</option>
+          <option>2010–2019</option>
+        </select>
+
+        <div class="panel-foot">
+          <button class="btn" disabled>Ukázkový filtr</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- pravý sloupec: seznam filmů -->
+    <section class="catalog">
+      <header class="catalog-header">
+        <h1>Filmový katalog</h1>
+        <p class="muted">Zobrazeno 48 výsledků — statická ukázka</p>
+      </header>
+
+      <div class="movies-grid">
+        <!-- opakovatelná karta -->
+        <article class="movie-item">
+          <a href="movie-detail.html">
+            <div class="poster-wrap">
+              <img src="images/dune2.jpg" alt="Plakát — Duna">
+            </div>
+            <div class="movie-meta">
+              <h3>Duna: Část druhá</h3>
+              <p class="meta-row">2024 • Sci-fi • 155 min</p>
+              <p class="rating small">★ 8.9 / 10</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="movie-item">
+          <a href="movie-detail.html">
+            <div class="poster-wrap">
+              <img src="images/batman.jpg" alt="Plakát — Batman">
+            </div>
+            <div class="movie-meta">
+              <h3>Batman</h3>
+              <p class="meta-row">2023 • Akční • 176 min</p>
+              <p class="rating small">★ 8.4 / 10</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="movie-item">
+          <a href="movie-detail.html">
+            <div class="poster-wrap">
+              <img src="images/joker.jpg" alt="Plakát — Joker">
+            </div>
+            <div class="movie-meta">
+              <h3>Joker</h3>
+              <p class="meta-row">2019 • Drama • 122 min</p>
+              <p class="rating small">★ 8.6 / 10</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="movie-item">
+          <a href="movie-detail.html">
+            <div class="poster-wrap">
+              <img src="images/interstelar2.jpg" alt="Plakát — Interstellar">
+            </div>
+            <div class="movie-meta">
+              <h3>Interstellar</h3>
+              <p class="meta-row">2014 • Sci-fi • 169 min</p>
+              <p class="rating small">★ 8.7 / 10</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- doplň další karty pro ukázku -->
+        <article class="movie-item">
+          <a href="movie-detail.html">
+            <div class="poster-wrap">
+              <img src="images/alien.jpg" alt="Plakát">
+            </div>
+            <div class="movie-meta">
+              <h3>Alien</h3>
+              <p class="meta-row">2021 • Thriller • 110 min</p>
+              <p class="rating small">★ 7.8 / 10</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="movie-item">
+          <a href="movie-detail.html">
+            <div class="poster-wrap">
+              <img src="images/hobbit.jpg" alt="Plakát">
+            </div>
+            <div class="movie-meta">
+              <h3>Hobbit</h3>
+              <p class="meta-row">2018 • Komedie • 98 min</p>
+              <p class="rating small">★ 7.2 / 10</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- ... -->
+      </div>
+
+      <!-- Paginace (statická) -->
+      <nav class="pagination">
+        <a class="page prev disabled" href="#" aria-disabled="true">‹</a>
+        <a class="page active" href="#">1</a>
+        <a class="page" href="#">2</a>
+        <a class="page" href="#">3</a>
+        <a class="page next" href="#">›</a>
+      </nav>
+    </section>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">MoviePassion — Semestrální práce</div>
+</footer>
+</body>
+</html>
